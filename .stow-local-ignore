@@ -1,0 +1,9 @@
+# Ignore these files and folders when running stow
+Makefile
+README.md
+/.git
+
+# Config files and folders not located directly in ~/.config/
+/vscode
+/zsh
+/firefox
