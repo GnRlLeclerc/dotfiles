@@ -81,7 +81,7 @@ return {
   },
   {
     -- This is my fork of the original in order to remove the lighter background color for statuscol
-    'TiboX2021/kanagawa.nvim',
+    'GnRlLeclerc/kanagawa.nvim',
     lazy = theme ~= 'Kanagawa',
     config = function()
       require('kanagawa').setup({

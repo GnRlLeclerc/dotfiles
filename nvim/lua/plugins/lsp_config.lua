@@ -71,7 +71,6 @@ return {
           },
         },
         jdtls = true,
-        autotools_ls = true,
         marksman = true,
         pyright = true,
         somesass_ls = true,

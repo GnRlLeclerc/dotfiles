@@ -4,7 +4,7 @@ local config = {}
 
 -- Color Scheme
 local color_schemes = require('color_schemes')
-local color_scheme = color_schemes.nord
+local color_scheme = color_schemes.rose_pine_moon
 config.color_scheme = color_scheme.wezterm
 
 -- General behavior
