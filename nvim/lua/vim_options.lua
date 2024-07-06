@@ -1,6 +1,9 @@
 -- Vim options
 -- In particular, contains some options that need to be loaded before lazy
 
+-- Start scrolling 5 lines before hitting the edge of the screen with the cursor
+vim.o.scrolloff = 5
+
 -- Use sytem clipboard
 vim.opt.clipboard = 'unnamedplus'
 
@@ -67,6 +70,16 @@ vim.api.nvim_create_autocmd({ 'VimEnter' }, {
   callback = function()
     if string.match(vim.fn.expand('%:p:h'), '/Notes$') then
       vim.opt.conceallevel = 1
+    end
+  end,
+})
+
+-- Disable syntax highlighting when opening large files in a buffer (> 100KB)
+vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
+  pattern = '*',
+  callback = function()
+    if vim.fn.getfsize(vim.fn.expand('%:p')) > 100 * 1024 then
+      vim.cmd('syntax clear')
     end
   end,
 })

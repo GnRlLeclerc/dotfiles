@@ -14,9 +14,7 @@ return {
         flavour = string.lower(theme_variant or 'macchiato'),
         transparent_background = true,
       })
-      if theme == 'Catppuccin' then
-        vim.cmd.colorscheme('catppuccin')
-      end
+      vim.cmd.colorscheme('catppuccin')
     end,
   },
   {
@@ -29,9 +27,7 @@ return {
         style = 'dark',
         transparent = true,
       })
-      if theme == 'One Dark' then
-        vim.cmd.colorscheme('onedark')
-      end
+      vim.cmd.colorscheme('onedark')
     end,
   },
   {
@@ -43,9 +39,7 @@ return {
       require('gruvbox').setup({
         transparent_mode = true,
       })
-      if theme == 'Gruvbox' then
-        vim.cmd.colorscheme('gruvbox')
-      end
+      vim.cmd.colorscheme('gruvbox')
     end,
   },
   {
@@ -58,9 +52,7 @@ return {
         style = string.lower(theme_variant or 'night'),
         transparent = true,
       })
-      if theme == 'Tokyo Night' then
-        vim.cmd.colorscheme('tokyonight')
-      end
+      vim.cmd.colorscheme('tokyonight')
     end,
   },
   {
@@ -74,23 +66,31 @@ return {
           transparency = true,
         },
       })
-      if theme == 'Rose Pine' then
-        vim.cmd.colorscheme('rose-pine')
-      end
+      vim.cmd.colorscheme('rose-pine')
     end,
   },
   {
-    -- This is my fork of the original in order to remove the lighter background color for statuscol
-    'GnRlLeclerc/kanagawa.nvim',
+    'rebelot/kanagawa.nvim',
     lazy = theme ~= 'Kanagawa',
     config = function()
+      local kanagawa_theme = string.lower(theme_variant or 'wave')
       require('kanagawa').setup({
-        transparent = true,
-        theme = string.lower(theme_variant or 'wave'),
+        colors = {
+          theme = {
+            wave = {
+              ui = {
+                bg_gutter = '#1F1F28',
+              },
+            },
+          },
+        },
+        background = {
+          dark = kanagawa_theme,
+          light = kanagawa_theme,
+        },
+        -- transparent = true,
       })
-      if theme == 'Kanagawa' then
-        vim.cmd.colorscheme('kanagawa')
-      end
+      vim.cmd.colorscheme('kanagawa')
     end,
   },
   {
@@ -100,9 +100,7 @@ return {
       require('horizon').setup({
         transparent = true,
       })
-      if theme == 'Horizon' then
-        vim.cmd.colorscheme('horizon')
-      end
+      vim.cmd.colorscheme('horizon')
     end,
   },
   {
@@ -111,9 +109,7 @@ return {
     config = function()
       vim.g.nord_disable_background = true
       require('nord').set()
-      if theme == 'Nord' then
-        vim.cmd.colorscheme('nord')
-      end
+      vim.cmd.colorscheme('nord')
     end,
   },
   {
@@ -123,9 +119,7 @@ return {
       require('dracula').setup({
         transparent_bg = true,
       })
-      if theme == 'Dracula' then
-        vim.cmd.colorscheme('dracula')
-      end
+      vim.cmd.colorscheme('dracula')
     end,
   },
 }
