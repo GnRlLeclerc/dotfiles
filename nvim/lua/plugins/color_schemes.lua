@@ -36,8 +36,10 @@ return {
     lazy = theme ~= 'Gruvbox',
     priority = 1000,
     config = function()
+      vim.o.background = 'light' -- or "light" for light mode
       require('gruvbox').setup({
-        transparent_mode = true,
+        transparent_mode = false,
+        contrast = 'soft',
       })
       vim.cmd.colorscheme('gruvbox')
     end,
@@ -74,12 +76,23 @@ return {
     lazy = theme ~= 'Kanagawa',
     config = function()
       local kanagawa_theme = string.lower(theme_variant or 'wave')
+      kanagawa_theme = 'lotus'
       require('kanagawa').setup({
         colors = {
           theme = {
             wave = {
               ui = {
                 bg_gutter = '#1F1F28',
+              },
+            },
+            dragon = {
+              ui = {
+                bg_gutter = '#181616',
+              },
+            },
+            lotus = {
+              ui = {
+                bg_gutter = '#f2ebbc',
               },
             },
           },
