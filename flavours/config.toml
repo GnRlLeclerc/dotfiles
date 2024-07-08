@@ -1,0 +1,8 @@
+# Flavours configuration
+
+# TODO : commencer par wezterm.
+[[items]]
+file = "~/.config/wezterm/base16_theme.lua"
+template = "wezterm"                        # test
+subtemplate = "lua"
+rewrite = true

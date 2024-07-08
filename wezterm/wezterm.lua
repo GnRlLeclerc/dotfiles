@@ -3,9 +3,18 @@ local wezterm = require('wezterm')
 local config = {}
 
 -- Color Scheme
+-- Legacy color schemes:
 local color_schemes = require('color_schemes')
 local color_scheme = color_schemes.tokyo_night_moon
-config.color_scheme = color_scheme.wezterm
+
+-- Actual color scheme
+local success, colors = pcall(require, 'base16_theme')
+
+if success then
+  config.colors = colors
+else
+  config.color_scheme = 'nord'
+end
 
 -- General behavior
 config.adjust_window_size_when_changing_font_size = false

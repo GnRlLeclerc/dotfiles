@@ -71,7 +71,7 @@ pacman -S \
     tldr \
     zoxide
 
-paru dotacat lazydocker
+paru dotacat lazydocker betterdiscord-installer
 ```
 
 - `asdf`: [see instructions](https://asdf-vm.com/guide/getting-started.html#_2-download-asdf)

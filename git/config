@@ -1,6 +1,6 @@
 [user]
 	name = Thibaut de Saivre
-	email = thibaut.de-saivre@polytechnique.edu
+	email = thibaut2saivre@gmail.com
 [core]
 	editor = nvim
 	autocrlf = input
@@ -37,3 +37,5 @@
 
 [credential]
 	helper = store
+[url "git@github.com:"]
+	insteadOf = https://github.com/
