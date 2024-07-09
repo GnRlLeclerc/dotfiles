@@ -1,8 +1,14 @@
 # Flavours configuration
 
-# TODO : commencer par wezterm.
 [[items]]
 file = "~/.config/wezterm/base16_theme.lua"
-template = "wezterm"                        # test
+template = "wezterm"
 subtemplate = "lua"
 rewrite = true
+
+[[items]]
+file = "~/.config/nvim/lua/base16_colors.lua"
+template = "luakit"
+subtemplate = "colors"
+rewrite = true
+hook = "nvim-reload-scheme"

@@ -1,28 +1,3 @@
--- Status bar
-local theme = os.getenv('THEME')
-local variant = os.getenv('THEME_VARIANT')
-local lualine_theme = 'nightfly'
-
-if theme == 'Kanagawa' then
-  lualine_theme = 'kanagawa'
-elseif theme == 'Tokyo Night' then
-  lualine_theme = 'tokyonight'
-elseif theme == 'One Dark' then
-  lualine_theme = 'onedark'
-elseif theme == 'Gruvbox' then
-  lualine_theme = 'gruvbox'
-elseif theme == 'Catppuccin' then
-  lualine_theme = string.format('catppuccin-%s', string.lower(variant or 'macchiato'))
-elseif theme == 'Rose Pine' then
-  lualine_theme = 'rose-pine'
-elseif theme == 'Horizon' then
-  lualine_theme = 'horizon'
-elseif theme == 'Nord' then
-  lualine_theme = 'nord'
-elseif theme == 'Dracula' then
-  lualine_theme = 'dracula-nvim'
-end
-
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons', 'AndreM222/copilot-lualine' },
@@ -32,7 +7,7 @@ return {
     require('lualine').setup({
       extensions = { 'neo-tree' },
       options = {
-        theme = lualine_theme,
+        theme = 'base16',
         section_separators = { left = '', right = '' },
         -- ignore_focus = { "neo-tree" },
       },

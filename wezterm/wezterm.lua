@@ -3,11 +3,6 @@ local wezterm = require('wezterm')
 local config = {}
 
 -- Color Scheme
--- Legacy color schemes:
-local color_schemes = require('color_schemes')
-local color_scheme = color_schemes.tokyo_night_moon
-
--- Actual color scheme
 local success, colors = pcall(require, 'base16_theme')
 
 if success then
@@ -61,12 +56,6 @@ config.animation_fps = 30
 config.cursor_blink_ease_in = 'Linear'
 config.cursor_blink_ease_out = 'Linear'
 config.force_reverse_video_cursor = true -- Better integration with theme
-
--- Export environment variables for theme synchronization
-config.set_environment_variables = {
-  THEME = color_scheme.name,
-  THEME_VARIANT = color_scheme.variant,
-}
 
 -- Wezterm Neovim Zen Mode
 wezterm.on('user-var-changed', function(window, pane, name, value)

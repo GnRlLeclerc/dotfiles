@@ -56,7 +56,7 @@ local showDiagnostic = function()
     border = 'rounded',
     source = 'always', -- This shows the source of the diagnostic
     prefix = ' ',
-    scope = 'cursor', -- Shows diagnostics for the current cursor position
+    scope = 'cursor',  -- Shows diagnostics for the current cursor position
   }
   vim.diagnostic.open_float(nil, opts)
 end

@@ -9,4 +9,6 @@ links:
 	stow -t ~/.config .
 	echo "Linking Firefox config"
 	stow -t ~/.mozilla/firefox/$(shell ls ~/.mozilla/firefox | grep 'default-release') firefox
+	echo "Linking binaries"
+	stow -t ~/.local/bin bin
 
