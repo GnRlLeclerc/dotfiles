@@ -12,3 +12,9 @@ template = "luakit"
 subtemplate = "colors"
 rewrite = true
 hook = "nvim-reload-scheme"
+
+[[items]]
+file = "~/.config/helix/themes/base16.toml"
+template = "helix"
+rewrite = true
+# hook = not supported yet !

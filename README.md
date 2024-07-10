@@ -46,6 +46,7 @@ Useful cli tools.
 | [`fastfetch`](https://github.com/fastfetch-cli/fastfetch)                     | Maintained & faster neofetch   |
 | [`fd`](https://github.com/sharkdp/fd)                                         | Better find                    |
 | [`fzf`](https://github.com/junegunn/fzf)                                      | Cli fuzzy finder               |
+| [`helix`](https://helix-editor.com/)                                          | Terminal-based editor          |
 | [`lazygit`](https://github.com/jesseduffield/lazygit)                         | Fancy Git TUI                  |
 | [`lazydocker`](https://github.com/jesseduffield/lazydocker)                   | Fancy Docker TUI               |
 | [`mamba`](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html#mamba) | Faster conda                   |
@@ -65,6 +66,7 @@ pacman -S \
     fd \
     fzf \
     git-delta \
+    helix \
     lazygit \
     procs \
     ripgrep \
