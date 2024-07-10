@@ -12,7 +12,6 @@ end
 
 --  This function gets run when an LSP connects to a particular buffer.
 local on_attach = function(_, bufnr)
-  -- TODO: "_" contains the client name ? Bind a keymap to restart the lsp (like <leader>rr)
   -- Buffer local mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
   local builtin = require('telescope.builtin')
@@ -128,6 +127,20 @@ return {
 
         lspconfig[lsp].setup(config)
       end
+
+      -- Some keymaps to reload common language servers
+      vim.keymap.set(
+        'n',
+        '<leader>rp',
+        '<CMD>LspRestart pyright<CR>',
+        { silent = true, desc = 'Restart Pyright', noremap = true }
+      )
+      vim.keymap.set(
+        'n',
+        '<leader>rt',
+        '<CMD>LspRestart tsserver<CR>',
+        { silent = true, desc = 'Restart TSserver', noremap = true }
+      )
     end,
   },
 }
