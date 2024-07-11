@@ -52,6 +52,7 @@ Useful cli tools.
 | [`mamba`](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html#mamba) | Faster conda                   |
 | [`procs`](https://github.com/dalance/procs)                                   | Fancy ps                       |
 | [`ripgrep`](https://github.com/BurntSushi/ripgrep)                            | Better grep                    |
+| [`tmux`](https://github.com/tmux/tmux)                                        | Terminal multiplexer           |
 | [`tldr`](https://github.com/tldr-pages/tldr)                                  | User friendly man pages        |
 | [`zoxide`](https://github.com/ajeetdsouza/zoxide)                             | Cd with autojump               |
 
@@ -70,6 +71,7 @@ pacman -S \
     lazygit \
     procs \
     ripgrep \
+    tmux \
     tldr \
     zoxide
 
@@ -115,6 +117,16 @@ Setup Neovim with synctex:
 ```bash
 pip install neovim-remote
 ```
+
+#### Tmux setup
+
+Clone the tmux plugin manager:
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+```
+
+Then install the tmux plugins within tmux by pressing `ctrl-A` and `shift-I`
 
 ## GUI
 
