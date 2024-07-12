@@ -18,3 +18,9 @@ file = "~/.config/helix/themes/base16.toml"
 template = "helix"
 rewrite = true
 # hook = not supported yet !
+
+[[items]]
+file = "~/.config/tmux/plugins/tmux/themes/catppuccin_base16.tmuxtheme"
+template = "tmux"
+rewrite = true
+hook = "tmux source ~/.config/tmux/tmux.conf"
