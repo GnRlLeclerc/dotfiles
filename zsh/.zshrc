@@ -117,6 +117,7 @@ export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 export PATH="$PATH:$HOME/.cargo/bin:$HOME/.local/bin"
 
 # Bat & delta color theme
+# TODO : utiliser base16 à la place
 # export BAT_THEME="gruvbox-dark"
 # export BAT_THEME="TwoDark"
 export BAT_THEME="ansi"
@@ -188,3 +189,6 @@ if [ -f "/home/thibaut/miniforge3/etc/profile.d/mamba.sh" ]; then
     . "/home/thibaut/miniforge3/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
+
+# Source color schemes
+source ~/.fzf_colors.zsh
