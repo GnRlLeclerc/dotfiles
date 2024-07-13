@@ -116,12 +116,6 @@ export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 # Rust paths
 export PATH="$PATH:$HOME/.cargo/bin:$HOME/.local/bin"
 
-# Bat & delta color theme
-# TODO : utiliser base16 à la place
-# export BAT_THEME="gruvbox-dark"
-# export BAT_THEME="TwoDark"
-export BAT_THEME="ansi"
-
 # Remote nvim for synctex
 export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 
@@ -192,3 +186,7 @@ fi
 
 # Source color schemes
 source ~/.fzf_colors.zsh
+
+# Bat & delta color theme
+export BAT_THEME="base16"
+
