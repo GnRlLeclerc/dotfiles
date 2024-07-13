@@ -6,12 +6,10 @@ return {
     'rcarriga/nvim-notify',
   },
   config = function()
+    require('notify').setup({
+      background_colour = require('dynamic-base16').colors.base00,
+    })
     require('noice').setup({
-      -- Make the background for mini notifications transparent
-      views = {
-        mini = { win_options = { winblend = 0 } },
-      },
-
       -- Disable Noice for LSP notifications (let fidget handle them)
       lsp = { progress = { enabled = false } },
       -- Filter out some messages
