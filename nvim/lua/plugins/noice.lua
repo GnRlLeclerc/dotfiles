@@ -38,5 +38,8 @@ return {
         },
       },
     })
+
+    -- Keymaps
+    vim.keymap.set('n', '<leader>nn', ':Noice dismiss<CR>', { noremap = true, desc = 'Dismiss notification' })
   end,
 }

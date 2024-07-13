@@ -22,9 +22,6 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>', { noremap = true, silent = true, d
 vim.keymap.set('n', '<A-h>', '<C-o>', { noremap = true, silent = true, desc = 'Navigate to previous location' })
 vim.keymap.set('n', '<A-l>', '<C-i>', { noremap = true, silent = true, desc = 'Navigate to next location' })
 
--- Noice
-vim.keymap.set('n', '<leader>nn', ':Noice dismiss<CR>', { noremap = true, desc = 'Dismiss notification' })
-
 -- Navigate between buffers
 vim.keymap.set('n', '<leader>bl', ':bnext<CR>', { noremap = true, silent = true, desc = 'Next buffer' })
 vim.keymap.set('n', '<leader>bh', ':bprev<CR>', { noremap = true, silent = true, desc = 'Previous buffer' })
@@ -32,3 +29,11 @@ vim.keymap.set('n', '<leader>bd', ':bdelete<CR>', { noremap = true, silent = tru
 
 -- Prune buffers to avoid neovim slowdown
 vim.keymap.set('n', '<leader>bo', '<cmd>%bd|e#<cr>', { desc = 'Close all buffers but the current one' })
+
+--  Test notifications
+vim.keymap.set(
+  'n',
+  '<leader>nt',
+  ':lua require("notify")("This is a notification!")<CR>',
+  { noremap = true, silent = true, desc = 'Test info notification' }
+)
