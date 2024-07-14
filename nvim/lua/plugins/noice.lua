@@ -6,6 +6,7 @@ return {
     'rcarriga/nvim-notify',
   },
   config = function()
+    ---@diagnostic disable-next-line: missing-fields
     require('notify').setup({
       background_colour = require('dynamic-base16').colors.base00,
     })

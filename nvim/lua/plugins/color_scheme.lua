@@ -4,6 +4,8 @@ return {
   config = function()
     require('dynamic-base16').setup({
       module = 'base16_colors',
+      transparent = true,
+      watch = true,
     })
   end,
 }

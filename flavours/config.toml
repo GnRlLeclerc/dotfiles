@@ -11,7 +11,7 @@ file = "~/.config/nvim/lua/base16_colors.lua"
 template = "luakit"
 subtemplate = "colors"
 rewrite = true
-hook = "nvim-reload-scheme"
+# hook: dynamic-base16.nvim watches the output file
 
 [[items]]
 file = "~/.config/helix/themes/base16.toml"
@@ -29,4 +29,11 @@ hook = "tmux source ~/.config/tmux/tmux.conf"
 file = "~/.fzf_colors.zsh"
 template = "fzf"
 subtemplate = "base16-default"
+rewrite = true
+
+[[items]]
+# Pas satisfaisant non plus
+file = "~/.config/Code/User/theme.json"
+template = "vscode"
+subtemplate = "base24"
 rewrite = true
