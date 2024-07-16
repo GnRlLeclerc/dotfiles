@@ -10,3 +10,10 @@ tmux/plugins/
 spicetify/*
 spicetify/Themes/base16/color.ini
 !spicetify/Themes
+
+# BetterDiscord themes
+BetterDiscord/data/stable/*
+BetterDiscord/data/betterdiscord.asar
+BetterDiscord/plugins/
+BetterDiscord/themes/
+!BetterDiscord/data/stable/themes.json

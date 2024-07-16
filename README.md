@@ -129,6 +129,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 Then install the tmux plugins within tmux by pressing `ctrl-A` and `shift-I`
 
+#### BetterDiscord
+
+Download [the installer](https://betterdiscord.app/) and run it. Rerun it on every Discord update.
+
 #### Spicetify
 
 Install Spicetify with the following command:
@@ -137,7 +141,7 @@ Install Spicetify with the following command:
 curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
 ```
 
-Then install it using `spicetify-reinstall`.
+Then install it using `spicetify-reinstall`. Rerun this command on every Spotify update.
 
 ## GUI
 

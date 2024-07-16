@@ -43,3 +43,8 @@ file = "~/.config/spicetify/Themes/base16/color.ini"
 template = "spicetify"
 rewrite = true
 hook = "spicetify refresh"
+
+[[items]]
+file = "~/.config/BetterDiscord/themes/base16.theme.css"
+template = "betterdiscord"
+rewrite = true
