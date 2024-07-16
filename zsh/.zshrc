@@ -190,3 +190,5 @@ source ~/.fzf_colors.zsh
 # Bat & delta color theme
 export BAT_THEME="base16"
 
+
+export PATH=$PATH:/home/thibaut/.spicetify

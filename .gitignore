@@ -3,6 +3,10 @@ wezterm/base16_theme.lua
 nvim/lua/base16_colors.lua
 helix/themes/base16.toml
 
-
 # Tmux plugins
 tmux/plugins/
+
+# Spicetify config (only keep the generic base16 theme folder)
+spicetify/*
+spicetify/Themes/base16/color.ini
+!spicetify/Themes

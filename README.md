@@ -73,7 +73,8 @@ pacman -S \
     ripgrep \
     tmux \
     tldr \
-    zoxide
+    zoxide \
+    zsh
 
 paru dotacat lazydocker betterdiscord-installer flavours
 ```
