@@ -129,6 +129,16 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 Then install the tmux plugins within tmux by pressing `ctrl-A` and `shift-I`
 
+#### Spicetify
+
+Install Spicetify with the following command:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
+```
+
+Then install it using `spicetify-reinstall`.
+
 ## GUI
 
 Useful gui programs.

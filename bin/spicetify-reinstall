@@ -1,0 +1,6 @@
+#!/bin/bash
+# Reinstall Spicetify after Spotify update
+
+spicetify backup
+spicetify upgrade
+spicetify restore backup apply
