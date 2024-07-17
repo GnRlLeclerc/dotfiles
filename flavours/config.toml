@@ -48,3 +48,9 @@ hook = "spicetify refresh"
 file = "~/.config/BetterDiscord/themes/base16.theme.css"
 template = "betterdiscord"
 rewrite = true
+
+[[items]]
+file = "~/.config/BetterDiscord/data/stable/themes.json"
+template = "betterdiscord"
+subtemplate = "theme"
+rewrite = true
