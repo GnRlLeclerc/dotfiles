@@ -54,3 +54,8 @@ file = "~/.config/BetterDiscord/data/stable/themes.json"
 template = "betterdiscord"
 subtemplate = "theme"
 rewrite = true
+
+[[items]]
+file = "~/Notes/.obsidian/snippets/base16.css"
+template = "obsidian"
+rewrite = true
