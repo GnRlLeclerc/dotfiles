@@ -13,3 +13,7 @@ spicetify/Themes/base16/color.ini
 
 # BetterDiscord themes
 BetterDiscord/*
+
+# Zed configuration
+zed/*
+!zed/settings.json
