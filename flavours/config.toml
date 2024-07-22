@@ -31,14 +31,7 @@ file = "~/.fzf_colors.zsh"
 template = "fzf"
 subtemplate = "base16-default"
 rewrite = true
-# hook = TODO: source this specitic file again
-
-[[items]]
-# Pas satisfaisant non plus
-file = "~/.config/Code/User/theme.json"
-template = "vscode"
-subtemplate = "base24"
-rewrite = true
+# hook = TODO: source this specific file again
 
 [[items]]
 file = "~/.config/spicetify/Themes/base16/color.ini"
@@ -69,3 +62,14 @@ file = "~/.config/zed/themes/base16.json"
 template = "zed"
 rewrite = true
 # hook = zed watches user defined themes !
+
+# Pywal compatibility (used for vscode theme)
+[[items]]
+file = "~/.cache/wal/colors"
+template = "colors"
+rewrite = true
+
+[[items]]
+file = "~/.cache/wal/colors.json"
+template = "pywal"
+rewrite = true
