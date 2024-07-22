@@ -5,13 +5,14 @@ file = "~/.config/wezterm/base16_theme.lua"
 template = "wezterm"
 subtemplate = "lua"
 rewrite = true
+# hhok = wezterm watches the lua configuration !
 
 [[items]]
 file = "~/.config/nvim/lua/base16_colors.lua"
 template = "luakit"
 subtemplate = "colors"
 rewrite = true
-# hook: dynamic-base16.nvim watches the output file
+# hook: dynamic-base16.nvim watches the output file !
 
 [[items]]
 file = "~/.config/helix/themes/base16.toml"
@@ -30,6 +31,7 @@ file = "~/.fzf_colors.zsh"
 template = "fzf"
 subtemplate = "base16-default"
 rewrite = true
+# hook = TODO: source this specitic file again
 
 [[items]]
 # Pas satisfaisant non plus
@@ -48,6 +50,7 @@ hook = "spicetify refresh"
 file = "~/.config/BetterDiscord/themes/base16.theme.css"
 template = "betterdiscord"
 rewrite = true
+# hook = see the following item
 
 [[items]]
 file = "~/.config/BetterDiscord/data/stable/themes.json"
@@ -59,3 +62,10 @@ rewrite = true
 file = "~/Notes/.obsidian/snippets/base16.css"
 template = "obsidian"
 rewrite = true
+# hook = Obsidian watches css snippets !
+
+[[items]]
+file = "~/.config/zed/themes/base16.json"
+template = "zed"
+rewrite = true
+# hook = zed watches user defined themes !
