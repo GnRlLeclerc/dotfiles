@@ -43,13 +43,7 @@ hook = "spicetify refresh"
 file = "~/.config/BetterDiscord/themes/base16.theme.css"
 template = "betterdiscord"
 rewrite = true
-# hook = see the following item
-
-[[items]]
-file = "~/.config/BetterDiscord/data/stable/themes.json"
-template = "betterdiscord"
-subtemplate = "theme"
-rewrite = true
+# hook = BetterDiscord watches the css themes !
 
 [[items]]
 file = "~/Notes/.obsidian/snippets/base16.css"
