@@ -63,13 +63,9 @@ template = "zed"
 rewrite = true
 # hook = zed watches user defined themes !
 
-# Pywal compatibility (used for vscode theme)
 [[items]]
-file = "~/.cache/wal/colors"
-template = "colors"
+file = "~/.config/Code/User/theme.json"
+template = "vscode"
+subtemplate = "base16"
 rewrite = true
-
-[[items]]
-file = "~/.cache/wal/colors.json"
-template = "pywal"
-rewrite = true
+# hook = dynamic-base16-vscode extension watches the theme file !
