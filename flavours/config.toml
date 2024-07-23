@@ -5,7 +5,7 @@ file = "~/.config/wezterm/base16_theme.lua"
 template = "wezterm"
 subtemplate = "lua"
 rewrite = true
-# hhok = wezterm watches the lua configuration !
+# hook = wezterm watches the lua configuration !
 
 [[items]]
 file = "~/.config/nvim/lua/base16_colors.lua"
