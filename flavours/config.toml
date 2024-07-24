@@ -63,3 +63,8 @@ template = "vscode"
 subtemplate = "base16"
 rewrite = true
 # hook = dynamic-base16-vscode extension watches the theme file !
+
+[[items]]
+file = "~/.config/zathura/colors.conf"
+template = "zathura"
+rewrite = true

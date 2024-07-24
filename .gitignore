@@ -17,3 +17,6 @@ BetterDiscord/*
 # Zed configuration
 zed/*
 !zed/settings.json
+
+# Zathura colors
+zathura/colors.conf
