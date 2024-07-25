@@ -17,6 +17,7 @@ config.enable_wayland = true
 config.scrollback_lines = 5000
 config.use_dead_keys = false
 config.warn_about_missing_glyphs = false -- Avoid notifications
+config.alternate_buffer_wheel_scroll_speed = 1 -- Slow scroll speed
 
 -- Font
 config.font = wezterm.font({
