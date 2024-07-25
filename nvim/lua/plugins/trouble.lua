@@ -15,13 +15,13 @@ return {
 
     vim.keymap.set(
       'n',
-      '<leader>xx',
+      '<leader>xX',
       '<cmd>Trouble diagnostics toggle<cr>',
       { noremap = true, silent = true, desc = 'Diagnostics (Trouble)' }
     )
     vim.keymap.set(
       'n',
-      '<leader>xX',
+      '<leader>xx',
       '<cmd>Trouble diagnostics toggle filter.buf=0<cr>',
       { noremap = true, silent = true, desc = 'Buffer Diagnostics (Trouble)' }
     )

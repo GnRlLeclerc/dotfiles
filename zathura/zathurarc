@@ -4,3 +4,4 @@ set selection-clipboard clipboard
 
 # Colors
 include colors.conf
+set recolor true # Color the pdf as well

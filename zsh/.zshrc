@@ -89,6 +89,7 @@ alias icat='wezterm imgcat'
 alias c=clear
 
 # Eza aliases
+alias l=ls
 alias ls="eza -g --icons --header --group-directories-first"
 alias la="eza -ag --icons --header --group-directories-first"
 alias lr="eza -lTg -L 2 --icons --header --group-directories-first"
@@ -118,6 +119,9 @@ export PATH="$PATH:$HOME/.cargo/bin:$HOME/.local/bin"
 
 # Remote nvim for synctex
 export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
+
+# Allow for mouse scrolling in git-delta
+export DELTA_PAGER="less --mouse"
 
 # Key bindings
 
