@@ -56,13 +56,13 @@ local showDiagnostic = function()
     border = 'rounded',
     source = 'always', -- This shows the source of the diagnostic
     prefix = ' ',
-    scope = 'cursor',  -- Shows diagnostics for the current cursor position
+    scope = 'cursor', -- Shows diagnostics for the current cursor position
   }
   vim.diagnostic.open_float(nil, opts)
 end
 
 -- Set the keymap to call the global function
-vim.keymap.set('n', '<leader>d', showDiagnostic, { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>dd', showDiagnostic, { noremap = true, silent = true })
 
 -- Update conceal level in my Obsidian notes directory
 vim.api.nvim_create_autocmd({ 'VimEnter' }, {

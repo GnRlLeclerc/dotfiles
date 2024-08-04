@@ -69,3 +69,10 @@ file = "~/.config/zathura/colors.conf"
 template = "zathura"
 subtemplate = "recolor"
 rewrite = true
+
+[[items]]
+file = "~/.mozilla/colors.toml"
+template = "colors"
+subtemplate = "toml"
+rewrite = true
+# hook = firefox-native-base16 watches the colors.toml file !
