@@ -62,7 +62,7 @@ local showDiagnostic = function()
 end
 
 -- Set the keymap to call the global function
-vim.keymap.set('n', '<leader>dd', showDiagnostic, { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>dd', showDiagnostic, { noremap = true, silent = true, desc = 'Show diagnostics' })
 
 -- Update conceal level in my Obsidian notes directory
 vim.api.nvim_create_autocmd({ 'VimEnter' }, {

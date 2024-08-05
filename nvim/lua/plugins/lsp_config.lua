@@ -103,6 +103,7 @@ return {
             },
           },
         },
+        nil_ls = true,
         -- TODO: gopls, sqls
       }
 
