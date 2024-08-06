@@ -20,3 +20,6 @@ zed/*
 
 # Zathura colors
 zathura/colors.conf
+
+# Kitty colors
+kitty/colors.conf
