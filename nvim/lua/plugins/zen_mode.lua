@@ -9,7 +9,6 @@ return {
       },
     },
     plugins = {
-      wezterm = { enabled = true, font = '+1' },
       twilight = { enabled = false },
     },
 

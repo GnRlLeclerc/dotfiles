@@ -22,7 +22,8 @@ zed/*
 zathura/colors.conf
 
 # Kitty colors
-kitty/colors.conf
+kitty/*
+!kitty/kitty.conf
 
 # Hyprland colors
 hypr/colors.conf

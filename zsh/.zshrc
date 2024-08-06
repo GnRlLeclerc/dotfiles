@@ -85,8 +85,8 @@ alias less='bat --paging=always --style=plain' # Bat with always paging
 alias lolcat=dotacat
 alias neofetch=fastfetch
 alias ps=procs
-alias icat='wezterm imgcat'
 alias c=clear
+alias icat="kitten icat"
 
 # Eza aliases
 alias l=ls

@@ -71,10 +71,10 @@ rewrite = true
 # hook = firefox-native-base16 watches the colors.toml file !
 
 [[items]]
-file = "~/.config/kitty/colors.conf"
+file = "~/.config/kitty/themes/base16.conf"
 template = "kitty"
 rewrite = true
-hook = "kitty @ set-colors -a ~/.config/kitty/colors.conf"
+hook = "kitten themes --reload-in=all base16"
 
 [[items]]
 file = "~/.config/hypr/colors.conf"

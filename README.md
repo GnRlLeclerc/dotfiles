@@ -82,20 +82,6 @@ paru dotacat lazydocker betterdiscord-installer flavours
 - `asdf`: [see instructions](https://asdf-vm.com/guide/getting-started.html#_2-download-asdf)
 - `mamba`: [see instructions](https://github.com/conda-forge/miniforge), then copy [these completions](https://github.com/conda-incubator/conda-zsh-completion) to `/usr/local/share/zsh`
 
-### Setup
-
-In order to use the system clipboard inside neovim on wezterm on Wayland, install `wl-clipboard`:
-
-```bash
-pacman -S wl-clipboard
-```
-
-Run wezterm using the following command:
-
-```bash
-env WAYLAND_DISPLAY=wayland-0 wezterm start --always-new-process
-```
-
 #### Latex Setup
 
 Install the following packages:
