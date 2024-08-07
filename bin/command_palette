@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Rofi command palette for quick access to custom commands
+
+LOCAL_BIN="$HOME/.local/bin"
+
+commands=(
+    "Change Wallpaper"
+)
+
+selected_command=$(printf "%s\n" "${commands[@]}" | rofi -dmenu -i -p "Select Command:")
+
+# Execute the selected command
+case "$selected_command" in
+    "Change Wallpaper")
+        $LOCAL_BIN/wallpapers &
+        ;;
+    *)
+        ;;
+esac

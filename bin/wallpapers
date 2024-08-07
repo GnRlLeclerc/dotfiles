@@ -2,7 +2,7 @@
 # Pick a wallpaper image using rofi
 
 WALLPAPER_DIR="$HOME/Images/Wallpapers"
-IMAGES=$(find "$WALLPAPER_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \))
+IMAGES=$(find "$WALLPAPER_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \))
 
 if [ -z "$IMAGES" ]; then
   echo "No images found in $WALLPAPER_DIR"
