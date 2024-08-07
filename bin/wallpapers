@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Pick a wallpaper image using rofi
+
+WALLPAPER_DIR="$HOME/Images/Wallpapers"
+IMAGES=$(find "$WALLPAPER_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \))
+
+if [ -z "$IMAGES" ]; then
+  echo "No images found in $WALLPAPER_DIR"
+  exit 1
+fi
+
+OPTIONS=""
+while IFS= read -r IMAGE; do
+  IMAGE_NAME=$(basename "$IMAGE")
+  IMAGE_NAME_NO_EXT="${IMAGE_NAME%.*}"
+  OPTIONS+="$IMAGE_NAME_NO_EXT\x00icon\x1f$IMAGE\n"
+done <<<"$IMAGES"
+
+SELECTED_IMAGE_NAME=$(echo -e "$OPTIONS" | rofi -dmenu -i -markup-rows -p "Select Wallpaper:")
+
+if [ -z "$SELECTED_IMAGE_NAME" ]; then
+  echo "No image selected"
+  exit 1
+fi
+
+# Find the full path of the selected image
+SELECTED_IMAGE=$(find "$WALLPAPER_DIR" -type f -iname "$SELECTED_IMAGE_NAME.*")
+
+swww img "$SELECTED_IMAGE" --transition-type center
