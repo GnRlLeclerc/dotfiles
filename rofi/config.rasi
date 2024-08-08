@@ -1,3 +1,6 @@
+/* config.rasi TODO quand je ricerai le truc avec base16, mettre un fichier tiers */
+/* @import "colors.rasi" */
+
 * {
     font: "Figtree 13";
     g-spacing: 10px;

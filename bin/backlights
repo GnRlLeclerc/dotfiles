@@ -2,25 +2,45 @@
 
 # Control the backlights using Rofi
 
-CHOICE=$(echo -e "Bright\nDim\nOff" | rofi -dmenu -p "Choose keyboard backlight intensity:")
+# Get the current lighting level (0, 1, 2)
+CURRENT=$(brightnessctl -d platform::kbd_backlight get)
+
+# Map the current value to a selected row index for rofi
+case "$CURRENT" in
+0)
+  SELECTED=2
+  ;;
+1)
+  SELECTED=1
+  ;;
+2)
+  SELECTED=0
+  ;;
+*)
+  echo "Error: Invalid current value '$CURRENT'"
+  exit 1
+  ;;
+esac
+
+CHOICE=$(echo -e "Bright\nDim\nOff" | rofi -dmenu -p "Choose keyboard backlight intensity:" -selected-row $SELECTED)
 
 # Execute command based on the user's choice
 case "$CHOICE" in
-    Dim)
-        echo "Dimming the keyboard backlights..."
-        brightnessctl -d platform::kbd_backlight set 1
-        ;;
-    Bright)
-        echo "Brightening the keyboard backlights..."
-        brightnessctl -d platform::kbd_backlight set 2
-        ;;
-    Off)
-        echo "Turning off the keyboard backlights..."
-        brightnessctl -d platform::kbd_backlight set 0
-        ;;
-    *)
-        echo "Error: Invalid choice '$CHOICE'"
-        display_help
-        exit 1
-        ;;
+Dim)
+  echo "Dimming the keyboard backlights..."
+  brightnessctl -d platform::kbd_backlight set 1
+  ;;
+Bright)
+  echo "Brightening the keyboard backlights..."
+  brightnessctl -d platform::kbd_backlight set 2
+  ;;
+Off)
+  echo "Turning off the keyboard backlights..."
+  brightnessctl -d platform::kbd_backlight set 0
+  ;;
+*)
+  echo "Error: Invalid choice '$CHOICE'"
+  display_help
+  exit 1
+  ;;
 esac

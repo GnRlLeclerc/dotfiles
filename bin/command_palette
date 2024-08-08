@@ -4,20 +4,19 @@
 LOCAL_BIN="$HOME/.local/bin"
 
 commands=(
-    "Change Wallpaper"
-    "Keyboard Backlights"
+  "Change Wallpaper"
+  "Keyboard Backlights"
 )
 
 selected_command=$(printf "%s\n" "${commands[@]}" | rofi -dmenu -i -p "Select Command:")
 
 # Execute the selected command
 case "$selected_command" in
-    "Change Wallpaper")
-        $LOCAL_BIN/wallpapers &
-        ;;
-    "Keyboard Backlights")
-        $LOCAL_BIN/backlights &
-        ;;
-    *)
-        ;;
+"Change Wallpaper")
+  $LOCAL_BIN/wallpapers &
+  ;;
+"Keyboard Backlights")
+  $LOCAL_BIN/backlights &
+  ;;
+*) ;;
 esac
