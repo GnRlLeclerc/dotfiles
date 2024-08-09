@@ -29,4 +29,4 @@ kitty/*
 hypr/colors.conf
 
 # Rofi colors
-rofi/colors.rasi
+rofi/themes/

@@ -83,7 +83,7 @@ rewrite = true
 # hyprland watches the hypr/ folder !
 
 [[items]]
-file = "~/.config/rofi/colors.rasi"
+file = "~/.config/rofi/themes/base16.rasi"
 template = "rofi"
-subtemplate = "colors"
+subtemplate = "minimal"
 rewrite = true
