@@ -27,3 +27,6 @@ kitty/*
 
 # Hyprland colors
 hypr/colors.conf
+
+# Rofi colors
+rofi/colors.rasi

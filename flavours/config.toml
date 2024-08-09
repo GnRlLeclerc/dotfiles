@@ -81,3 +81,9 @@ file = "~/.config/hypr/colors.conf"
 template = "hyprland"
 rewrite = true
 # hyprland watches the hypr/ folder !
+
+[[items]]
+file = "~/.config/rofi/colors.rasi"
+template = "rofi"
+subtemplate = "colors"
+rewrite = true
