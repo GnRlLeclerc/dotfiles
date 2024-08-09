@@ -2,6 +2,7 @@
 /* TODO: overhaul default theme with @theme "base16" and define everything that is missing */
 /* See `rofi -no-config -dump-theme` */
 /* Also change the listview layout to "horizontal" */
+/* Wallpapers variant: bigger icons, fewer icons at a time, reduced bottom padding */
 
 configuration {
 	modi:                         "drun";
@@ -32,7 +33,7 @@ mainbox {
     children:                    [ "inputbar", "listview" ];
     spacing:                     24px;
     margin:                      0px;
-    padding:                     100px 226px;
+    padding:                     100px 226px 50px;
 }
 
 /* ---------------------------------------- Input ---------------------------------------------- */
@@ -73,8 +74,8 @@ entry {
 
 listview {
     cursor:                      "default";
-    columns:                     6;
-    lines:                       4;
+    columns:                     4;
+    lines:                       3;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
@@ -99,7 +100,7 @@ element {
 
     spacing:                     16px;
     margin:                      0px;
-    padding:                     36px 0px;
+    padding:                     16px 0px;
     horizontal-align: 0.50;
 }
 
@@ -110,7 +111,7 @@ element-text {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        56px;
+    size:                        170px;
     cursor:                      inherit;
 }
 

@@ -16,7 +16,7 @@ while IFS= read -r IMAGE; do
   OPTIONS+="$IMAGE_NAME_NO_EXT\x00icon\x1f$IMAGE\n"
 done <<<"$IMAGES"
 
-SELECTED_IMAGE_NAME=$(echo -e "$OPTIONS" | rofi -dmenu -i -markup-rows -p "Select Wallpaper:")
+SELECTED_IMAGE_NAME=$(echo -e "$OPTIONS" | rofi -dmenu -i -markup-rows -config "$HOME/.config/rofi/wallpapers.rasi" -p "")
 
 if [ -z "$SELECTED_IMAGE_NAME" ]; then
   echo "No image selected"
