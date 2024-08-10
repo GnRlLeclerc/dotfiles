@@ -8,7 +8,7 @@ commands=(
   "Keyboard Backlights"
 )
 
-selected_command=$(printf "%s\n" "${commands[@]}" | rofi -dmenu -i -p "Select Command:")
+selected_command=$(printf "%s\n" "${commands[@]}" | rofi -dmenu -i -p "")
 
 # Execute the selected command
 case "$selected_command" in
