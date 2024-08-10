@@ -10,104 +10,102 @@
 /* --------------------------------------- Configuration --------------------------------------- */
 
 configuration {
-	  modi:                         "drun";
-    show-icons:                   true;
-    display-drun:                 " ";
-  	drun-display-format:          "{name}";
+	  modi:                "drun";
+    show-icons:          true;
+    display-drun:        " ";
+  	drun-display-format: "{name}";
 }
 
 /* --------------------------------------- Window Layout --------------------------------------- */
 
 window {
-    padding:          25px;
-    background-color: var(background);
-    border-radius: 0;
-    fullscreen: true;
+    padding:            25px;
+    background-color:   var(background);
+    border-radius:      0;
+    fullscreen:         true;
 }
 
 mainbox {
-    padding: 0;
-    border:  0;
-    border-radius: 0;
+    padding:            0;
+    border:             0;
+    border-radius:      0;
 }
 
 /* ------------------------------------------- Input ------------------------------------------- */
 
 inputbar {
-    margin: 0px 40% 20px 40%;
-    padding:                     10px 20px;
-    spacing:    0px ;
-    background-color: var(background-light);
-    children:   [ "prompt", "entry" ];
-    border-radius: 50%;
-    spacing: 5px;
+    margin:             0px 40% 20px 40%;
+    padding:            10px 20px;
+    spacing:            0;
+    background-color:   var(background-light);
+    children:           [ "prompt", "entry" ];
+    border-radius:      50%;
+    spacing:            5px;
 }
 
 prompt {
-    spacing:    0;
-    text-color: var(text);
+    spacing:            0;
+    text-color:         var(text);
 }
 
 entry {
-    text-color:        var(text);
-    cursor:            text;
-    spacing:           0;
-    placeholder:       "";
-    border-radius: 0;
+    text-color:         var(text);
+    cursor:             text;
+    spacing:            0;
+    placeholder:        "";
+    border-radius:      0;
 }
 
 /* ---------------------------------------- List Layout ---------------------------------------- */
 
 listview {
-    padding:      2px 0px 0px ;
-    spacing:      2px ;
-    border-radius: 0px;
-    lines: 3;
-    columns: 4;
-    fixed-columns:               true;
-    fixed-lines:                 true;
+    padding:            2px 0px 0px ;
+    spacing:            2px ;
+    border-radius:      0;
+    lines:              3;
+    columns:            4;
+    fixed-columns:      true;
+    fixed-lines:        true;
 }
 
 /* ------------------------------------------ Elements ----------------------------------------- */
 
 element {
-    padding:                     36px 0px;
-    cursor:  pointer;
-    spacing:                     16px;
-
-    orientation:                 vertical;
-
-    border-radius:               25px;
-    border:  0;
-    border-radius: 10px;
+    padding:            36px 0px;
+    cursor:             pointer;
+    spacing:            16px;
+    border-radius:      25px;
+    border:             0;
+    border-radius:      10px;
+    orientation:        vertical;
 }
 
 element normal.normal {
-    background-color: transparent;
-    text-color:       var(text);
+    background-color:   transparent;
+    text-color:         var(text);
 }
 element alternate.normal {
-  background-color: transparent;
-  text-color:       var(text);
+  background-color:     transparent;
+  text-color:           var(text);
 }
 
 element selected.normal {
-    background-color: var(background-light);
-    text-color:       white;
+    background-color:   var(background-light);
+    text-color:         white;
 }
 
 element-text {
-    background-color: transparent;
-    horizontal-align: 0.50;
-    cursor:           inherit;
-    highlight:        inherit;
-    text-color:       inherit;
+    background-color:   transparent;
+    horizontal-align:   0.50;
+    cursor:             inherit;
+    highlight:          inherit;
+    text-color:         inherit;
 }
 
 element-icon {
-    background-color:            transparent;
-    text-color:                  inherit;
-    size:                        170px;
-    cursor:                      inherit;
+    background-color:   transparent;
+    text-color:         inherit;
+    size:               170px;
+    cursor:             inherit;
 }
 
