@@ -22,7 +22,7 @@ case "$CURRENT" in
   ;;
 esac
 
-CHOICE=$(echo -e "Bright\nDim\nOff" | rofi -dmenu -p "" -i -selected-row $SELECTED)
+CHOICE=$(echo -e "Bright\nDim\nOff" | rofi -dmenu -p " " -i -selected-row $SELECTED)
 
 # Execute command based on the user's choice
 case "$CHOICE" in
