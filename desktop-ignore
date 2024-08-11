@@ -1,0 +1,31 @@
+# Desktop entries to hide
+
+# Java
+jconsole-java-openjdk.desktop
+jconsole-java11-openjdk.desktop
+jconsole-java17-openjdk.desktop
+jconsole-java21-openjdk.desktop
+jshell-java-openjdk.desktop
+jshell-java11-openjdk.desktop
+jshell-java17-openjdk.desktop
+jshell-java21-openjdk.desktop
+
+# Electron
+electron27.desktop
+electron28.desktop
+electron29.desktop
+electron30.desktop
+
+# Gnome stuff
+org.gnome.Contacts.desktop
+gnome-users-panel.desktop
+
+# Other random stuff
+xdvi.desktop
+bvnc.desktop
+bssh.desktop
+avahi-discover.desktop
+lstopo.desktop
+rygel-preferences.desktop
+org.freedesktop.MalcontentControl.desktop
+rofi-theme-selector.desktop
