@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+# Smoother backlight control using an easing function
+# Note that this script requires `brightnessctl`, and does not use percentages for greater precision
+
+# Usage:
+#  smooth_backlights 1
+#  smooth_backlights -1
+
+# Options
+values=10 # Number of values from min to max
+max_brightness=$(brightnessctl max)
+
+# Compute the steps given as argument
+steps=$(echo $1 | bc)
+
+# Check if the expression was valid by checking if result is non-empty
+if [ -z "$steps" ]; then
+  echo "Invalid steps expression."
+  exit 1
+elif [ $steps -eq 0 ]; then
+  exit 0
+fi
+
+current=$(brightnessctl get)
+
+# Quadratic easing function
+easing() {
+  echo "$1 ^ 2" | bc -l
+}
+
+inverse() {
+  echo "e(l($1) / 2)" | bc -l
+}
+
+# 1. Compute where we are in the easing abscissa
+current_normalized=$(echo "$current / $max_brightness" | bc -l)
+if [ $current -le 0 ]; then
+  x=0
+else
+  # Inverse uses log (not defined for x <= 0)
+  x=$(inverse $current_normalized)
+fi
+
+# Move some steps up or down
+delta=$(echo "scale=3; $steps / ($values - 1)" | bc)
+
+# 2. Compute the new easing abscissa
+x=$(echo "$x + $delta" | bc -l)
+x=$(echo "if ($x < 0) 0 else $x" | bc -l)
+x=$(echo "if ($x > 1) 1 else $x" | bc -l)
+
+# 3. Compute the new value
+y=$(easing $x)
+
+# 4. Transform into brightness absolute value
+brightness=$(echo "$y * $max_brightness" | bc)
+rounded=$(echo "($brightness + 0.5)/1" | bc)
+
+brightnessctl set $rounded
