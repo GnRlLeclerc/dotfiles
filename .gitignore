@@ -30,3 +30,6 @@ hypr/colors.conf
 
 # Rofi colors
 rofi/themes/
+
+# Wlogout colors
+wlogout/colors.css

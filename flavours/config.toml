@@ -87,3 +87,8 @@ file = "~/.config/rofi/themes/base16.rasi"
 template = "rofi"
 subtemplate = "minimal"
 rewrite = true
+
+[[items]]
+file = "~/.config/wlogout/colors.css"
+template = "wlogout"
+rewrite = true
