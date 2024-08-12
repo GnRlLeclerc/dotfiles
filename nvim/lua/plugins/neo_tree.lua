@@ -44,6 +44,7 @@ return {
         hide_gitignored = false,
         hide_by_name = { '.git', 'venv', '.venv', 'node_modules', '__pycache__' },
       },
+      follow_current_file = { enabled = true },
     },
   },
 }
