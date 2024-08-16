@@ -7,7 +7,7 @@
 #  smooth_backlights -1
 
 # Options
-values=10 # Number of values from min to max
+values=12 # Number of values from min to max
 max_brightness=$(brightnessctl max)
 
 # Compute the steps given as argument
