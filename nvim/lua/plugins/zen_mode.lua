@@ -10,6 +10,11 @@ return {
     },
     plugins = {
       twilight = { enabled = false },
+      options = { laststatus = 1 }, -- Hide lualine
+      kitty = {
+        enabled = true,
+        font = '+2',
+      },
     },
 
     on_open = function()

@@ -1,7 +1,7 @@
 ---@diagnostic disable: missing-fields
 return {
   'nvim-treesitter/nvim-treesitter',
-  dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects' },
+  dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects', 'nushell/tree-sitter-nu' },
   build = ':TSUpdate',
   config = function()
     local configs = require('nvim-treesitter.configs')
